@@ -40,7 +40,6 @@ LIBS:MRDT-ICs
 LIBS:MRDT-Passives
 LIBS:MRDT-Shields
 LIBS:MRDT-Switches
-LIBS:MRST-Silkscreens
 LIBS:Sattelite Board-cache
 EELAYER 25 0
 EELAYER END
@@ -68,25 +67,14 @@ F 3 "" H 1800 1350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GY-ML8511-Breakout U5
-U 1 1 5AA42B1E
-P 1800 3550
-F 0 "U5" H 1850 3500 60  0000 C CNN
-F 1 "GY-ML8511-Breakout" H 1900 4000 60  0000 C CNN
-F 2 "MRDT-Devices:ML8511-Breakout" H 1800 3550 60  0001 C CNN
-F 3 "" H 1800 3550 60  0001 C CNN
-	1    1800 3550
-	1    0    0    -1  
-$EndComp
-$Comp
 L MPL3115A2-Breakout U6
 U 1 1 5AA42B43
-P 1800 4350
-F 0 "U6" H 1850 4300 60  0000 C CNN
-F 1 "MPL3115A2-Breakout" H 1950 5000 60  0000 C CNN
-F 2 "MRDT-Devices:MPL3115A2-Breakout" H 1800 4350 60  0001 C CNN
-F 3 "" H 1800 4350 60  0001 C CNN
-	1    1800 4350
+P 1800 4450
+F 0 "U6" H 1850 4400 60  0000 C CNN
+F 1 "MPL3115A2-Breakout" H 1950 5100 60  0000 C CNN
+F 2 "MRDT-Devices:MPL3115A2-Breakout" H 1800 4450 60  0001 C CNN
+F 3 "" H 1800 4450 60  0001 C CNN
+	1    1800 4450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -148,7 +136,7 @@ Text Notes 550  2650 0    60   ~ 0
 Temperature
 Text Notes 550  3150 0    60   ~ 0
 UltraViolet
-Text Notes 550  3750 0    60   ~ 0
+Text Notes 550  3850 0    60   ~ 0
 Pressure
 Text GLabel 1600 1200 0    60   Input ~ 0
 +5V
@@ -159,16 +147,12 @@ Text GLabel 1600 2200 0    60   Input ~ 0
 Text GLabel 1600 2700 0    60   Input ~ 0
 +3V3
 Wire Notes Line
-	2500 1050 2500 4450
+	2500 1050 2500 4550
 Wire Notes Line
-	2500 4450 500  4450
-Wire Notes Line
-	500  4450 500  1050
-Wire Notes Line
-	2500 3650 500  3650
-Text GLabel 1600 3200 0    60   Input ~ 0
+	500  1050 500  4550
+Text GLabel 1600 3300 0    60   Input ~ 0
 +3V3
-Text GLabel 1600 4200 0    60   Input ~ 0
+Text GLabel 1600 4300 0    60   Input ~ 0
 +3V3
 Text GLabel 1600 1400 0    60   UnSpc ~ 0
 GND
@@ -178,9 +162,9 @@ Text GLabel 1600 2400 0    60   UnSpc ~ 0
 GND
 Text GLabel 1600 2900 0    60   UnSpc ~ 0
 GND
-Text GLabel 1600 3300 0    60   UnSpc ~ 0
+Text GLabel 1600 3400 0    60   UnSpc ~ 0
 GND
-Text GLabel 1600 4300 0    60   UnSpc ~ 0
+Text GLabel 1600 4400 0    60   UnSpc ~ 0
 GND
 Text GLabel 5100 1200 0    60   Output ~ 0
 +3V3
@@ -192,19 +176,19 @@ Text GLabel 5100 1500 0    60   Input ~ 0
 Methane_VOUT
 Text GLabel 5100 1600 0    60   Input ~ 0
 Ammonia_VOUT
-Text GLabel 5100 1800 0    60   Input ~ 0
+Text GLabel 5100 1700 0    60   Input ~ 0
 UV_VOUT
-Text GLabel 5100 1900 0    60   Input ~ 0
+Text GLabel 5100 1800 0    60   Input ~ 0
 Humidity_VOUT
-Text GLabel 5100 2000 0    60   Input ~ 0
+Text GLabel 5100 1900 0    60   Input ~ 0
 Temp_VOUT
-Text GLabel 5100 2100 0    60   Input ~ 0
+Text GLabel 5100 2000 0    60   Input ~ 0
 Pressure_SCL
-Text GLabel 5100 2200 0    60   Input ~ 0
-Pressure_SDA
-Text GLabel 1600 4000 0    60   Output ~ 0
+Text GLabel 5100 2100 0    60   Input ~ 0
 Pressure_SDA
 Text GLabel 1600 4100 0    60   Output ~ 0
+Pressure_SDA
+Text GLabel 1600 4200 0    60   Output ~ 0
 Pressure_SCL
 Text GLabel 1600 1300 0    60   Output ~ 0
 Methane_VOUT
@@ -276,43 +260,47 @@ Wire Wire Line
 Wire Wire Line
 	1250 1950 1250 1800
 Connection ~ 1250 1800
-Text GLabel 1600 3400 0    60   Output ~ 0
+Text GLabel 1600 3500 0    60   Output ~ 0
 UV_VOUT
 $Comp
 L R R5
 U 1 1 5AA46AB2
-P 1450 3500
-F 0 "R5" V 1400 3350 50  0000 C CNN
-F 1 "100K" V 1450 3500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 1380 3500 50  0001 C CNN
-F 3 "" H 1450 3500 50  0001 C CNN
-	1    1450 3500
+P 1450 3600
+F 0 "R5" V 1400 3450 50  0000 C CNN
+F 1 "100K" V 1450 3600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1380 3600 50  0001 C CNN
+F 3 "" H 1450 3600 50  0001 C CNN
+	1    1450 3600
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1300 3500 0    60   Input ~ 0
+Text GLabel 1300 3600 0    60   Input ~ 0
 +3V3
 Wire Wire Line
-	1600 3800 1600 3900
+	1600 3900 1600 4000
 $Comp
-L Molex_SL-5 U7
-U 1 1 5AA47236
-P 5300 1650
-F 0 "U7" H 5350 1600 60  0001 C CNN
-F 1 "Molex_SL-5" H 5500 2200 60  0000 C CNN
-F 2 "MRDT-Connectors:MOLEX_SL_5" H 5300 1650 60  0001 C CNN
-F 3 "" H 5300 1650 60  0001 C CNN
-	1    5300 1650
+L GY-ML8511-Breakout U5
+U 1 1 5AA46821
+P 1800 3650
+F 0 "U5" H 1850 3600 60  0000 C CNN
+F 1 "GY-ML8511-Breakout" H 1950 4200 60  0000 C CNN
+F 2 "MRDT-Devices:GY-ML8511-Breakout" H 1800 3550 60  0001 C CNN
+F 3 "" H 1800 3550 60  0001 C CNN
+	1    1800 3650
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	2500 3750 500  3750
+Wire Notes Line
+	500  4550 2500 4550
 $Comp
-L Molex_SL-5 U8
-U 1 1 5AA47269
-P 5300 2250
-F 0 "U8" H 5350 2200 60  0001 C CNN
-F 1 "Molex_SL-5" H 5500 2800 60  0000 C CNN
-F 2 "MRDT-Connectors:MOLEX_SL_5" H 5300 2250 60  0001 C CNN
-F 3 "" H 5300 2250 60  0001 C CNN
-	1    5300 2250
+L Molex_SL-10 U7
+U 1 1 5AA47653
+P 5300 1650
+F 0 "U7" H 5350 1600 60  0001 C CNN
+F 1 "Molex_SL-10" H 5500 2200 60  0000 C CNN
+F 2 "MRDT-Connectors:MOLEX_SL_10" H 5300 1650 60  0001 C CNN
+F 3 "" H 5300 1650 60  0001 C CNN
+	1    5300 1650
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
