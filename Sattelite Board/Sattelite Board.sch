@@ -303,4 +303,8 @@ F 3 "" H 5300 1650 60  0001 C CNN
 	1    5300 1650
 	1    0    0    -1  
 $EndComp
+Text Notes 2550 1400 0    60   ~ 0
+Resistor Divider Included in Breakout \nto make 3.3V logic
+Text Notes 2550 3500 0    60   ~ 0
+Molex SL to External Sensor Breakout\nSensor not soldered to Board
 $EndSCHEMATC

@@ -65,7 +65,7 @@
     (aux_axis_origin 0 0)
     (visible_elements 7FFEFF7F)
     (pcbplotparams
-      (layerselection 0x00030_80000001)
+      (layerselection 0x010f0_80000001)
       (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -86,9 +86,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory Gerbs/))
   )
 
   (net 0 "")
@@ -616,7 +616,7 @@
   (gr_arc (start 248.666 83.82) (end 248.666 79.756) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 212.09 83.82) (end 208.026 83.82) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 212.09 79.756) (end 248.666 79.756) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_text "Science Sattelite Board\nMars Rover 2018\nMissouri S&T\nAndrew Van Horn" (at 233.426 90.297) (layer B.SilkS)
+  (gr_text "Sensor Lid, Rev1\nMars Rover, 2018\nMissouri S&T\nAndrew Van Horn" (at 233.426 90.297) (layer B.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
 

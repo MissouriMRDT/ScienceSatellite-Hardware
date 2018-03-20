@@ -3,7 +3,7 @@
   (general
     (links 9)
     (no_connects 0)
-    (area 147.523999 94.437999 169.217849 111.810001)
+    (area 147.523999 94.437999 171.87962 111.810001)
     (thickness 1.6)
     (drawings 7)
     (tracks 15)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.254)
+    (last_trace_width 0.25)
     (user_trace_width 0.254)
     (trace_clearance 0.2)
     (zone_clearance 0.254)
@@ -65,7 +65,7 @@
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
-      (layerselection 0x00030_80000001)
+      (layerselection 0x010f0_80000001)
       (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -86,9 +86,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory Gerbs/))
   )
 
   (net 0 "")
@@ -135,10 +135,10 @@
       (net 2 /+5V))
   )
 
-  (module MRDT-Headers:3x1_Header (layer F.Cu) (tedit 5AA41B71) (tstamp 5AA410BE)
+  (module MRDT-Headers:3x1_Header (layer F.Cu) (tedit 5AB05154) (tstamp 5AA410BE)
     (at 167.132 104.14)
     (path /5AA41055)
-    (fp_text reference J1 (at 0.254 3.302) (layer F.SilkS) hide
+    (fp_text reference J1 (at -0.4572 3.3528) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Conn_01x03 (at 0 -5.588) (layer F.Fab) hide
@@ -156,13 +156,13 @@
       (net 2 /+5V))
   )
 
-  (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5AA41C17) (tstamp 5AA410CF)
+  (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5AB05157) (tstamp 5AA410CF)
     (at 165.608 103.886 90)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /5AA40F92)
     (attr smd)
-    (fp_text reference R1 (at 3.0988 -0.0508 90) (layer F.SilkS)
+    (fp_text reference R1 (at 0.0508 -1.3716 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 19.3k (at -0.254 -1.524 90) (layer F.Fab)
@@ -192,13 +192,13 @@
     )
   )
 
-  (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5AA41C1B) (tstamp 5AA41B08)
+  (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 5AB05150) (tstamp 5AA41B08)
     (at 165.608 99.822 270)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /5AA41BE1)
     (attr smd)
-    (fp_text reference R2 (at 0 -1.45 270) (layer F.SilkS)
+    (fp_text reference R2 (at -0.254 1.3208 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 10k (at 0.254 1.524 270) (layer F.Fab)
